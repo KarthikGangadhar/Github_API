@@ -3,17 +3,17 @@ var joi = require('joi');
 
 module.exports = function (server, options) {
     var joiUsername = joi.string().required().description('User Name: github username or email id.');
-    var joiPassword = joi.string().required().description('Password: github account password.');
+    // var joiPassword = joi.string().required().description('Password: github account password.');
     
     server.route({
         method: 'GET',
-        path: '/users',
+        path: '/users/{id}',
         config: {
             validate: {
                 query: {
                         // PUT MORE VALIDATION HERE
-                        username: joiUsername,
-                        password: joiPassword
+                        id: joiUsername,
+                        // password: joiPassword
                 }
             },
             notes: ['Retrieves a profile for a user based on the Github login credentials.'].join('<br>'),
@@ -22,9 +22,8 @@ module.exports = function (server, options) {
         },
         handler: function (request, reply) {
             var options = {
-                // call_type: 'cricket'
                 username: request.query.username,
-                password: request.query.password
+                // password: request.query.password
             }
             return github_helper.githubAPICall(options).then(function (return_data) {
                 return reply({
