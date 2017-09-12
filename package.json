@@ -1,7 +1,7 @@
 {
-  "name": "cric_api",
+  "name": "git_api",
   "version": "1.0.0",
-  "description": "\"an application using hapijs and mongoDB\"",
+  "description": "\"an application using hapijs\"",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/KarthikGangadhar/CriApi.git"
+    "url": "https://github.com/KarthikGangadhar/Github_API.git"
   },
   "author": "Karthik.G",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/KarthikGangadhar/CriApi/issues"
+    "url": "https://github.com/KarthikGangadhar/Github_API/issues"
   },
-  "homepage": "https://github.com/KarthikGangadhar/CriApi#readme",
+  "homepage": "https://github.com/KarthikGangadhar/Github_API#readme",
   "dependencies": {
     "bluebird": "^3.4.6",
     "chai": "^3.5.0",

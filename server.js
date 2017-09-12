@@ -1,6 +1,6 @@
 var Hapi = require('hapi');
 var server = module.exports = new Hapi.Server();
-var cric_api_helper = require('./helper/cric_api_helper.js');
+var git_api_helper = require('./helper/github_api_helper.js');
 var index = require('./helper/index.js');
 
 // cricAPi - Key 1 yiPB2mqlqdNnPa57Vs8P8S74DXk1 
